@@ -10,6 +10,7 @@ public class Role {
     @Id
     // @GeneratedValue(strategy = GenerationType.AUTO) we dont need automatic generation because we only have
     //admin and user role, and it is going to be specified.
+    @Column(name = "role_id")
     private int roleId;
     private String name;
 
